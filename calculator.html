@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Assignment (Phenom_J)</title>
+</head>
+<body>
+    <center>
+    <form action=""name="calculator">
+        <font size="+1">
+        <table border="1" cellpadding="4" cellspacing="0" bgcolor="gray">
+            <thead><b><h2>Basic Calculator with HTML</h2></b></thead>
+            <b><tr>
+                <td colspan="4"><input type="text" id="display" disabled placeholder="El Problema?"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;<input type="button" value="1"
+                onclick="calculator.display.value += '1'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="2"
+                onclick="calculator.display.value += '2'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="3"
+                onclick="calculator.display.value += '3'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="&times;"
+                onclick="calculator.display.value += '*'"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;<input type="button" value="4"
+                onclick="calculator.display.value += '4'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="5"
+                onclick="calculator.display.value += '5'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="6"
+                onclick="calculator.display.value += '6'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="&#8722;"
+                onclick="calculator.display.value += '-'"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;<input type="button" value="7"
+                onclick="calculator.display.value += '7'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="8"
+                onclick="calculator.display.value += '8'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="9"
+                onclick="calculator.display.value += '9'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="&plus;"
+                onclick="calculator.display.value += '+'"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;<input type="button" value="C"
+                onclick="calculator.display.value = ''"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="0"
+                onclick="calculator.display.value += '0'"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="="
+                onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                <td>&nbsp;&nbsp;<input type="button" value="&#247;"
+                onclick="calculator.display.value += '/'"></td>
+            </tr></b>
+        </table>
+    </font>
+    </form>
+</body>
+</center>
+</html>
